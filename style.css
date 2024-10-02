@@ -21,8 +21,29 @@ body{
 }
 .container{
     width:60%;
-    height:60%;
+    height:70%;
     border:2px solid black;
     margin:5rem auto;
     background: var(--White);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.mortgage-box{
+    padding:15px;
+    width:55%;
+    height:100%;
+    border:3px solid red;
+    border-radius: 6px;
+}
+.show-box{
+    border:3px solid green;
+    width:45%;
+    height:100%;
+    background-color: var(--Slate-900);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 60px;
+
 }
