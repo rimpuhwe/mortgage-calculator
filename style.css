@@ -128,9 +128,10 @@ h3 {
 }
 .currency-input p{
     position: absolute;
-    font-size: 15px;
+    font-size: 13px;
     top:30px;
     color:var(--Red);
+    margin-top: 5px;
     
 }
 
