@@ -17,31 +17,30 @@
                 <span>Clear All</span>
             </div>
             <div class="input-container">
-                <label for="mortgage-amount">Mortgage Amount</label>
-                <div class="currency-input">
+                <label for="mortgage-amount" class="amount">Mortgage Amount</label>
+                <div class="currency-input" id="currency-container">
                     <span class="currency-symbol lime">£</span>
                     <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="0">
                 </div>
                 <div id="flexing">
                     <label for="mortgage-term">Mortage Term </label>
-                <div class="currency-input">
-                    <span class="currency-symbol term">years</span>
-                    <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="0">
+                    <div class="currency-input"  id="currency-container">
+                        <span class="currency-symbol term">years</span>
+                        <input type="number" id="mortgage-term" name="mortgage-term" placeholder="0">
+                    </div>
+                    <label for="interest-rate">Interest rate</label>
+                    <div class="currency-input"  id="currency-container">
+                        <span class="currency-symbol">%</span>
+                        <input type="number" id="interest-rate" name="interest-rate" placeholder="0">
+                    </div>
                 </div>
-                <label for="interest-rate">Interest rate</label>
-                <div class="currency-input">
-                    <span class="currency-symbol">%</span>
-                    <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="0">
-                </div>
+                <div class="option">
+                    <h4>Mortage Type</h4>
+                    <label for=""><input type="radio" name="repay-interest">Repayment</label>
+                    <label for=""><input type="radio" name="repay-interest">Interest Only</label>
                 </div>
             </div>
-            <div class="option">
-                <h6>Mortage Type</h6>
-                <label for=""><input type="radio" name="repay-interest">Repayment</label>
-                <label for=""><input type="radio" name="repay-interest">Interest Only</label>
-            </div>
-
-            <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <button id="calculate-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
                     <path fill="#133041"
                         d="M18.75 2.25H5.25a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 
                     0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5Zm-10.5 16.5a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 
@@ -52,7 +51,7 @@
                 Calculate Repayments
             </button>
         </div>
-        <div class="show-box">
+        <div class="show-box" id="box-result">
             <div class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="none"
                     viewBox="0 0 192 192">
                     <path fill="#fff"
