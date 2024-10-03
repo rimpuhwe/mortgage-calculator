@@ -21,19 +21,32 @@ body {
     background: var(--Slate-100);
     width: 100%;
     height: 100vh;
+    color:var(--Slate-500);
+    font-weight: 500;
+    font-size: 15px;
+
 
 }
 
 .container {
     width: 60%;
-    height: 70%;
+    height: 68%;
     border: 2px solid transparent;
-    margin: 5rem auto;
+    margin: 4rem auto;
     background: var(--White);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 10px;
+    cursor: pointer;
+    
+}
+input{
+    cursor: pointer;
+
+}
+input[type="number"]:focus{
+    outline: none;
 }
 
 .mortgage-box {
@@ -63,6 +76,7 @@ h3 {
     color: var(--White);
     font-size: 22px;
     margin-bottom: 10px;
+    margin-top: 6px;
 }
 
 .show-box p {
@@ -102,8 +116,9 @@ h3 {
     height: 80%;
    
 }
-.input-container .amount{
-    margin-bottom:0px;
+.input-container #mortgage-amount{
+    margin-top:3px;
+
 }
 
 .currency-input {
@@ -111,11 +126,18 @@ h3 {
     display: flex;
     align-items: center;
 }
+.currency-input p{
+    position: absolute;
+    font-size: 15px;
+    top:30px;
+    color:var(--Red);
+    
+}
 
 .currency-symbol {
     position: absolute;
     width: 7%;
-    height: 29.5px;
+    height: 29.4px;
     left: 1.2px;
     font-size: 20px;
     color: var(--Slate-700);
@@ -128,6 +150,7 @@ h3 {
 .lime {
     background: var(--Lime);
     color: var(--Slate-900);
+    top:4px;
 }
 input[type="number"] {
     padding-left: 50px;
@@ -136,6 +159,7 @@ input[type="number"] {
     width: 60%;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 #flexing{
   height:25%;
@@ -149,18 +173,19 @@ input[type="number"] {
     margin-bottom: 3px;
 }
 #flexing input{
-    margin-top:5px;
+    margin-top:8px;
     width:35%;
-    height:120%;
+    height:98%;
     font-size:15px;
     padding-right: 10px;
 }
 #flexing #mortgage-term{
     width:40%;
+    text-align: center;
 }
 #flexing .currency-symbol{
     width: 10%;
-    height: 28px;
+    height: 35px;
     top:0;
 
 }
@@ -197,8 +222,41 @@ button{
     padding: 5px;
     text-align: center;
     margin-left:30px;
+    margin-top:-5px;
 }
 input[type="number"]{
     font-weight: 500;
     color: var(--Slate-900);
 }
+.red{
+    border: 1px solid var(--Red);
+}
+#result-container{
+    width: 90%;
+    height:60%;
+    background:#02131c;
+    padding:10px;
+    margin:20px auto;
+    border-top: 2px solid var(--Lime);
+    border-radius: 5px;
+}
+#result-container p{
+    font-size: 13px;
+    margin:20px;
+}
+#result-container p span{
+    display: block;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--Lime);
+}
+#result-container .white{
+    color:var(--White);
+}
+hr{
+    height:2px;
+    background: var(--Slate-300);
+    border: 1px solid var(--Slate-300);
+}
+
