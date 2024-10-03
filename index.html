@@ -18,26 +18,26 @@
             </div>
             <div class="input-container">
                 <label for="mortgage-amount" class="amount">Mortgage Amount</label>
-                <div class="currency-input" id="currency-container">
+                <div class="currency-input" id="amount-container">
                     <span class="currency-symbol lime">£</span>
                     <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="0">
                 </div>
                 <div id="flexing">
                     <label for="mortgage-term">Mortage Term </label>
-                    <div class="currency-input"  id="currency-container">
+                    <div class="currency-input"  id="term-container">
                         <span class="currency-symbol term">years</span>
                         <input type="number" id="mortgage-term" name="mortgage-term" placeholder="0">
                     </div>
                     <label for="interest-rate">Interest rate</label>
-                    <div class="currency-input"  id="currency-container">
+                    <div class="currency-input"  id="rate-container">
                         <span class="currency-symbol">%</span>
                         <input type="number" id="interest-rate" name="interest-rate" placeholder="0">
                     </div>
                 </div>
-                <div class="option">
+                <div class="option" id="radio-container">
                     <h4>Mortage Type</h4>
-                    <label for=""><input type="radio" name="repay-interest">Repayment</label>
-                    <label for=""><input type="radio" name="repay-interest">Interest Only</label>
+                    <label for=""><input type="radio" id="repay" name="repay-interest">Repayment</label>
+                    <label for=""><input type="radio" id="rate" name="repay-interest">Interest Only</label>
                 </div>
             </div>
             <button id="calculate-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
